@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart </title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+       <div class="  ml-[20%] mt-24  ">
+           <h1 class="text-red-500 text-3xl ml-[25%] font-bold">shopping chart </h1>
+           <!--mac book-->
+           <div class=" flex gap-[200px] items-center">
+                <div class="flex flex-row items-center gap-6">
+                    <img src="img/mac.png" width="200px" height="200px" alt="">
+                    <button id="macRemove" class="py-3 px-8 rounded-2xl bg-red-700 text-white cursor-pointer hover:bg-red-900">Remove</button>
+                    <input id="mac" class="border py-3 px-5 rounded-md" type="text" value="0">
+                    <button id="macAdd" class=" py-3 px-10 rounded-2xl bg-green-700 text-white cursor-pointer hover:bg-green-900">Add</button>
+                </div>
+                <span id="macPrice">$120</span>
+           </div>
+            <!--phone book-->
+           <div class="flex flex-row items-center">
+           <div class=" flex gap-[200px] items-center">
+                <div class="flex flex-row items-center gap-6">
+                    <img src="img/iphone.jpeg" width="200px" height="200px" alt="">
+                    <button id="phoneRemove" class="py-3 px-8 rounded-2xl bg-red-700 text-white cursor-pointer hover:bg-red-900">Remove</button>
+                    <input id="phone" class="border py-3 px-5 rounded-md" type="text" value="0">
+                    <button id="phoneAdd"  class=" py-3 px-10 rounded-2xl bg-green-700 text-white cursor-pointer hover:bg-green-900">Add</button>
+                </div>
+                <span id="phonePrice">$60</span>
+           </div>
+       </div>
+
+       <div class="ml-[25%]">
+           <div class="flex gap-20">
+              <span class="w-[100px]">SubTotal</span>   <span id="subTotal"> $ 0</span>
+           </div  >
+            <div class="flex gap-20">
+              <span class="w-[100px]">Tax</span>   <span id="tax">$ 0</span>
+           </div >
+            <div class="flex gap-20">
+              <span class="w-[100px]">Grand Total</span>   <span id="grandTotal">$ 0</span>
+           </div>
+       </div>
+    <script src="script.js"></script>
+</body>
+</html>
